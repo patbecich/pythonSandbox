@@ -1,0 +1,55 @@
+
+GET https://en.wikipedia.org/wiki/Donald_Trump
+
+
+####
+
+GET https://upload.wikimedia.org/wikipedia/en/thumb/2/28/TrumpGlobe_Sept287.png
+
+
+####
+
+GET https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19%2C_2015_%28cropped%29.jpg/220px-Donald_Trump_August_19%2C_2015_%28cropped%29.jpg
+
+
+####
+
+GET http://localhost:8888/
+####
+
+GET http://localhost:8888/goodbye
+
+####
+
+GET http://localhost:8888/age
+
+####
+
+POST http://localhost:8888/age
+Content-Type: text/plain
+
+foo
+
+
+####   Content-Type: application/json
+
+
+POST http://localhost:8888/people
+Content-Type: application/json
+
+{
+  "label":"middle",
+  "name":"James"
+}
+
+####   Content-Type: application/json
+
+
+POST http://localhost:8888/people
+Content-Type: application/json
+
+{"employees":[
+    {"firstName":"John", "lastName":"Doe"},
+    {"firstName":"Anna", "lastName":"Smith"},
+    {"firstName":"Peter", "lastName":"Jones"}
+]}
