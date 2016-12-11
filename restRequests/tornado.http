@@ -42,7 +42,7 @@ Content-Type: application/json
   "name":"James"
 }
 
-####   Content-Type: application/json
+####
 
 
 POST http://localhost:8888/people
@@ -53,3 +53,39 @@ Content-Type: application/json
     {"firstName":"Anna", "lastName":"Smith"},
     {"firstName":"Peter", "lastName":"Jones"}
 ]}
+
+####
+
+
+
+GET http://www.timeapi.org/utc/now
+
+####
+
+GET http://date.jsontest.com
+
+
+####
+
+GET http://api.espn.com/v1/sports/baseball/mlb/events
+
+####
+
+GET https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20fantasysports.games%20where%20game_key%3D%22238%22&diagnostics=true
+
+####
+
+GET http://127.0.0.1:8888/countries
+
+###
+
+POST http://127.0.0.1:8888/age
+
+10
+
+####
+
+POST http://127.0.0.1:8888/query
+
+SELECT * FROM country;
+
